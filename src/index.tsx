@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './pages/App';
-import './index.css';
 
 document.body.style.margin = '0px';
 const root = ReactDOM.createRoot(

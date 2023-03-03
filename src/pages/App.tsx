@@ -1,13 +1,15 @@
 import { Container } from '@mui/system';
 import React from 'react';
-import HeroSection from '../components/HeroComponent';
-import NavBar from '../components/NavbarComponent';
+import HeroComponent from '../components/HeroComponent';
+import NavbarComponent from '../components/NavbarComponent';
+import ProjectsComponent from '../components/ProjectsComponent';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <HeroSection />
+      <NavbarComponent />
+      <HeroComponent />
+      <ProjectsComponent />
     </div>
   );
 }

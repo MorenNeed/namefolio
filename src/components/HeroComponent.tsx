@@ -1,60 +1,22 @@
-import React from 'react';
-import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import { colors } from '../utils/color.pallete';
+import React, { ReactNode } from 'react';
+import ThreeElement from '../elements/ThreeElement';
+import { AboutMeContent, AboutMeTitle, AboutMeWrapper, HeroContainer, HeroSectionWrapper } from './Hero.styles';
 
-const HeroSectionWrapper = styled('div')({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100vh',
-  backgroundColor: `${colors.gray[100]}`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-});
+export default class HeroComponent extends React.Component {
+  render() : ReactNode {
+    return (
+      <HeroSectionWrapper>
+        <HeroContainer>
+          <AboutMeWrapper>
+            <AboutMeTitle>About Me</AboutMeTitle>
+            <AboutMeContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed felis eget. Quisque id diam vel quam elementum pulvinar etiam non quam. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. A lacus vestibulum sed arcu non odio euismod lacinia at. Mauris a diam maecenas sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Sed felis eget velit aliquet sagittis id. Faucibus purus in massa tempor nec feugiat. Tellus in hac habitasse platea dictumst. Ut tortor pretium viverra suspendisse. Aliquam sem fringilla ut morbi tincidunt. Quis eleifend quam adipiscing vitae proin. Curabitur vitae nunc sed velit dignissim sodales ut. Elit ut aliquam purus sit amet luctus venenatis. Fermentum leo vel orci porta non.
+            </AboutMeContent>
+          </AboutMeWrapper>
+          <ThreeElement width={100} height={200}/>
+        </HeroContainer>
 
-const AboutMeWrapper = styled('div')({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  width: '100%',
-  maxWidth: '700px',
-  padding: '2rem',
-  backgroundColor: `rgba(${colors.gray[900]}, 0.7)`,
-  borderRadius: '20px',
-  boxShadow: `0 2px 16px rgba(${colors.gray[900]}, 0.7)`,
-  backdropFilter: 'blur(10px)',
-  '@media (min-width: 768px)': {
-    width: '40%',
-    marginLeft: '2rem',
-  },
-});
-
-const AboutMeTitle = styled('h2')({
-  fontSize: '2rem',
-  fontWeight: 'bold',
-  marginBottom: '1rem',
-  color: colors.gray[100],
-  textShadow: `0 2px 4px rgba(${colors.gray[900]}, 0.7)`,
-});
-
-const AboutMeContent = styled('p')({
-  fontSize: '1.2rem',
-  lineHeight: 1.5,
-  color: colors.gray[100],
-  textShadow: `0 2px 4px rgba(${colors.gray[900]}, 0.7)`,
-});
-
-const HeroSection: React.FC = () => {
-  return (
-    <HeroSectionWrapper>
-      <AboutMeWrapper>
-        <AboutMeTitle>About Me</AboutMeTitle>
-        <AboutMeContent>
-        </AboutMeContent>
-      </AboutMeWrapper>
-    </HeroSectionWrapper >
-  );
-};
-
-export default HeroSection;
+      </HeroSectionWrapper >
+    );
+  }
+}
