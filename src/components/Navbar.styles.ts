@@ -18,8 +18,8 @@ export const GlassNavbar = styled(Toolbar)(({ theme }) => ({
     color: colors.gray[800],
     position: 'fixed',
     top: '5px',
-    marginLeft: '10%',
-    marginRight: '10%',
+    margin: '0 10%',
+    padding: '0 !important',
     width: '80%',
     zIndex: '100',
 }));
@@ -28,12 +28,12 @@ export const GlassTypography = styled(Typography)(({ theme }) => ({
     fontWeight: theme.typography.fontWeightMedium,
     flexGrow: 1,
     fontFamily: 'Oswald',
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(3),
     width: 'fit-content'
 }));
 
 export const GlassLinkButtons = styled(Box)(({ theme }) => ({
-    margin: theme.spacing(1),
+    margin: theme.spacing(2),
     textDecoration: 'none',
 }));
 
@@ -43,7 +43,7 @@ export const GlassLinkButton = styled(Button)(({ theme }) => ({
 }));
 
 export const GlassNavbarButton = styled(IconButton)(({ theme }) => ({
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(3),
 }));
 
 export const GlassNavbarMenuIcon = styled(MenuIcon)(({ theme }) => ({
