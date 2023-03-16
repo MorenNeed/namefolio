@@ -22,7 +22,7 @@ export const ProjectsRow = styled(Row)({
 
 export const ProjectsCol = styled(Col)({
     display: 'flex',
-    flexDirection:'row',
+    flexDirection: 'row',
     backgroundColor: `rgba(1, 1, 1, 0.05)`,
     boxShadow: `0 1px 12px 0 ${colors.gray[300]}`,
     backdropFilter: 'blur(4px)',
@@ -50,9 +50,16 @@ export const ProjectImgContainer = styled('div')({
     borderRadius: '10px',
     color: colors.gray[800],
     padding: '10%',
-    width: '80%',
+    width: '100%',
     height: '50%'
 });
+
+export const ProjectImg = styled('img')({
+    width: '100%',
+    height: '100%',
+    opacity: '1',
+    borderRadius: '10px'
+})
 
 export const ProjectTitle = styled('h2')({
     color: colors.gray[800],

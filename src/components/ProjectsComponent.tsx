@@ -1,7 +1,6 @@
 import { Container } from '@mui/system';
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import { ProjectAbout, ProjectDescription, ProjectImgContainer, ProjectResponsibilities, ProjectsCol, ProjectsContainer, ProjectsRow, ProjectTechnologies, ProjectTitle, ProjectTitleContainer, ResponsibilitiesList, ResponsibilitiesListLi } from './Projects.styles';
+import { ProjectAbout, ProjectDescription, ProjectImg, ProjectImgContainer, ProjectResponsibilities, ProjectsCol, ProjectsContainer, ProjectsRow, ProjectTechnologies, ProjectTitle, ProjectTitleContainer, ResponsibilitiesList, ResponsibilitiesListLi } from './Projects.styles';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
@@ -14,7 +13,7 @@ export default class ProjectsComponent extends React.Component {
                         <AnimationOnScroll animateIn='animate__animated animate__backInLeft animate__faster'>
                             <ProjectsCol>
                                 <ProjectTitleContainer>
-                                    <ProjectImgContainer><img src='' /></ProjectImgContainer>
+                                    <ProjectImgContainer><ProjectImg src={'img/product-list-image-app.jpg'} alt='PRODUCT LIST MANAGE APP'/></ProjectImgContainer>
                                     <ProjectTitle>Product List Manage App</ProjectTitle>
                                 </ProjectTitleContainer>
                                 <ProjectDescription>
