@@ -10,12 +10,12 @@ import { Box, Button } from '@mui/material';
 export const GlassNavbar = styled(Toolbar)(({ theme }) => ({
     display: 'flex',
     justifyContent: 'space-between',
-    backgroundColor: `rgba(${hexToRgb(colors.gray[100])}, 1)`,
-    boxShadow: `0 1px 12px 0 ${colors.gray[300]}`,
+    backgroundColor: `rgba(${hexToRgb(colors.secondary)}, 1)`,
+    boxShadow: `0 1px 12px 0 ${colors.neutral3}`,
     backdropFilter: 'blur(4px)',
     '-webkit-backdrop-filter': 'blur(4px)', // Safari
     borderRadius: '10px',
-    color: colors.gray[800],
+    color: colors.primary,
     position: 'fixed',
     top: '5px',
     margin: '0 10%',
@@ -38,7 +38,7 @@ export const GlassLinkButtons = styled(Box)(({ theme }) => ({
 }));
 
 export const GlassLinkButton = styled(Button)(({ theme }) => ({
-    color: colors.gray[700],
+    color: colors.accent,
     fontFamily: 'Oswald',
 }));
 
@@ -47,6 +47,6 @@ export const GlassNavbarButton = styled(IconButton)(({ theme }) => ({
 }));
 
 export const GlassNavbarMenuIcon = styled(MenuIcon)(({ theme }) => ({
-    color: colors.gray[800],
+    color: colors.complementary,
     fontFamily: 'Oswald',
 }));

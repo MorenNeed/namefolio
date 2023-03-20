@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { colors } from '../utils/color.pallete';
 import { Container } from '@mui/system';
+import hexToRGB from '../utils/hexToRGB';
 
 export const HeroSectionWrapper = styled('div')({
     display: 'flex',
@@ -9,7 +10,7 @@ export const HeroSectionWrapper = styled('div')({
     justifyContent: 'center',
     width: '100%',
     height: '100vh',
-    backgroundColor: `${colors.gray[100]}`,
+    backgroundColor: colors.secondary,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     top: '0',
@@ -28,9 +29,9 @@ export const AboutMeWrapper = styled('div')({
     width: '100%',
     maxWidth: '700px',
     padding: '2rem',
-    backgroundColor: `rgba(1,1,1, 0.025)`,
+    backgroundColor: hexToRGB(colors.primary, 0.0125),
     borderRadius: '20px',
-    boxShadow: `0 2px 16px rgba(1,1,1, 0.1)`,
+    boxShadow: `0 2px 16px ${hexToRGB(colors.neutral1, 0.5)}`,
     backdropFilter: 'blur(10px)',
 });
 
@@ -38,15 +39,15 @@ export const AboutMeTitle = styled('h2')({
     fontSize: '2rem',
     fontWeight: 'bold',
     marginBottom: '1rem',
-    color: colors.gray[800],
+    color: colors.accent,
     fontFamily: 'Bangers',
-    textShadow: `0 2px 4px rgba(${colors.gray[900]}, 0.7)`,
+    textShadow: `0 2px 4px ${hexToRGB(colors.complementary, 0.3)}`,
 });
 
 export const AboutMeContent = styled('p')({
     fontSize: '1.2rem',
     fontFamily: 'Oswald',
     lineHeight: 1.5,
-    color: colors.gray[500],
-    textShadow: `0 2px 4px rgba(${colors.gray[900]}, 0.7)`,
+    color: hexToRGB(colors.neutral2, 0.5),
+    textShadow: `0 2px 4px ${hexToRGB(colors.neutral3, 0.125)}`,
 });

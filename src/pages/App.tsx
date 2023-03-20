@@ -1,16 +1,20 @@
-import { Container } from '@mui/system';
-import React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HeroComponent from '../components/HeroComponent';
 import NavbarComponent from '../components/NavbarComponent';
 import ProjectsComponent from '../components/ProjectsComponent';
+import { useState } from 'react';
 
 function App() {
+  const theme = createTheme();
+
   return (
-    <div className="App">
-      <NavbarComponent />
-      <HeroComponent />
-      <ProjectsComponent />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <NavbarComponent />
+        <HeroComponent />
+        <ProjectsComponent />
+      </div>
+    </ThemeProvider>
   );
 }
 
