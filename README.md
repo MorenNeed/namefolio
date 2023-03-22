@@ -4,10 +4,9 @@ This project is my personal portfolo.
 
 ## Technologies used
 
-In the were used this technologies:
-
-### React
-### react-three-fiber
-### MUI
-### TypeScript
-### THREE
+### In this project were used this technologies:
+  React
+  react-three-fiber
+  MUI
+  TypeScript  
+  THREE
