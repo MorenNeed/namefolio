@@ -1,17 +1,18 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HeroComponent from '../components/HeroComponent';
 import NavbarComponent from '../components/NavbarComponent';
+import PaddingComponent from '../components/PaddingComponent';
 import ProjectsComponent from '../components/ProjectsComponent';
-import { useState } from 'react';
+import colors from '../utils/color.pallete';
 
 function App() {
-  const theme = createTheme();
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={colors}>
       <div className="App">
         <NavbarComponent />
         <HeroComponent />
+        <PaddingComponent />
         <ProjectsComponent />
       </div>
     </ThemeProvider>

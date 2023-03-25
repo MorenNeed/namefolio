@@ -10,7 +10,7 @@ export default class HeroComponent extends React.Component {
           <AboutMeWrapper>
             <AboutMeTitle>Roshchupkin Oleksii - Junior Fullstack JS Developer</AboutMeTitle>
             <AboutMeContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed felis eget. Quisque id diam vel quam elementum pulvinar etiam non quam. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. A lacus vestibulum sed arcu non odio euismod lacinia at. Mauris a diam maecenas sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Sed felis eget velit aliquet sagittis id. Faucibus purus in massa tempor nec feugiat. Tellus in hac habitasse platea dictumst. Ut tortor pretium viverra suspendisse. Aliquam sem fringilla ut morbi tincidunt. Quis eleifend quam adipiscing vitae proin. Curabitur vitae nunc sed velit dignissim sodales ut. Elit ut aliquam purus sit amet luctus venenatis. Fermentum leo vel orci porta non.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed felis eget. Quisque id diam vel quam elementum pulvinar etiam non quam. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. A lacus vestibulum sed arcu non odio euismod lacinia at. Mauris a diam maecenas sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Sed felis eget velit aliquet sagittis id. Faucibus purus in massa tempor nec feugiat. Tellus in hac habitasse platea dictumst.
             </AboutMeContent>
           </AboutMeWrapper>
           <ThreeElement/>

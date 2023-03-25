@@ -1,16 +1,12 @@
-import { Image, ImageRounded } from "@mui/icons-material";
-import { rgbToHex, styled } from "@mui/system";
-import Col from "react-bootstrap/esm/Col";
-import Row from "react-bootstrap/esm/Row";
-import { colors } from "../utils/color.pallete";
+import { styled } from "@mui/system";
 import hexToRGB from "../utils/hexToRGB";
 
-export const ProjectsContainer = styled('div')({
+export const ProjectsContainer = styled('div')(({theme}) => ({
     position: 'absolute',
     width: '100%',
     height: '500vh',
-    backgroundColor: colors.secondary
-});
+    backgroundColor: theme.palette.info.light
+}));
 
 export const ProjectsRow = styled('div')({
     display: 'flex',
@@ -21,17 +17,17 @@ export const ProjectsRow = styled('div')({
     marginTop: '25vh'
 });
 
-export const ProjectsCol = styled('div')({
+export const ProjectsCol = styled('div')(({theme}) => ({
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: hexToRGB(colors.neutral1, 0.05),
-    boxShadow: `0 1px 12px 0 ${hexToRGB(colors.neutral3, 0.75)}`,
-    backdropFilter: 'blur(4px)',
-    '-webkit-backdrop-filter': 'blur(4px)', // Safari
+    backgroundColor: hexToRGB(theme.palette.secondary.main, 0.25),
+    boxShadow: `0 2px 25px 15px ${hexToRGB(theme.palette.primary.main, 0.25)}`,
+    backdropFilter: 'blur(100px)',
+    '-webkit-backdrop-filter': 'blur(100px)', // Safari
     borderRadius: '10px',
     padding: '80px',
     height: '500px'
-});
+}));
 
 export const ProjectTitleContainer = styled('div')({
     display: 'flex',
@@ -41,17 +37,17 @@ export const ProjectTitleContainer = styled('div')({
     height: '100%'
 });
 
-export const ProjectImgContainer = styled('div')({
+export const ProjectImgContainer = styled('div')(({theme}) => ({
     display: 'flex',
     justifyContent: 'space-between',
-    backgroundColor: `${hexToRGB(colors.neutral1, 0.05)}`,
+    backgroundColor: `${hexToRGB(theme.palette.text.primary, 0.1)}`,
     backdropFilter: 'blur(4px)',
     '-webkit-backdrop-filter': 'blur(4px)', // Safari
     borderRadius: '10px',
     padding: '10%',
     width: '80%',
     height: '50%'
-});
+}));
 
 export const ProjectImg = styled('img')({
     width: '100%',
@@ -62,12 +58,12 @@ export const ProjectImg = styled('img')({
     display: 'block'
 })
 
-export const ProjectTitle = styled('h2')({
-    color: colors.complementary,
+export const ProjectTitle = styled('h2')(({theme}) => ({
+    color: theme.palette.text.secondary,
     fontFamily: 'Bangers',
     width: '100%',
     textAlign: 'center'
-});
+}));
 
 export const ProjectDescription = styled('div')({
     width: '50%',
@@ -77,37 +73,37 @@ export const ProjectDescription = styled('div')({
     alignItems: 'flex-end'
 });
 
-export const ProjectAbout = styled('div')({
+export const ProjectAbout = styled('div')(({theme}) => ({
     fontFamily: 'Oswald',
-    color: colors.primary,
+    color: theme.palette.text.primary,
     width: '60%',
     paddingBottom: '2%',
     paddingTop: '4%'
-});
+}));
 
-export const ProjectResponsibilities = styled('div')({
+export const ProjectResponsibilities = styled('div')(({theme}) => ({
     display: 'flex',
     flexDirection: 'column',
     fontFamily: 'Oswald',
-    color: colors.accent,
+    color: theme.palette.text.secondary,
     width: '60%',
     paddingBottom: '2%'
-});
+}));
 
-export const ResponsibilitiesList = styled('ul')({
-    backgroundColor: `${hexToRGB(colors.neutral2, 0.05)}`,
+export const ResponsibilitiesList = styled('ul')(({theme}) => ({
+    backgroundColor: `${hexToRGB(theme.palette.text.primary, 0.1)}`,
     backdropFilter: 'blur(4px)',
     '-webkit-backdrop-filter': 'blur(4px)', // Safari
     borderRadius: '5px',
-});
+}));
 
 export const ResponsibilitiesListLi = styled('li')({
     padding: '20px'
 });
 
-export const ProjectTechnologies = styled('div')({
+export const ProjectTechnologies = styled('div')(({theme}) => ({
     fontFamily: 'Oswald',
-    color: colors.primary,
+    color: theme.palette.text.primary,
     width: '60%',
     paddingBottom: '2%'
-});
+}));
