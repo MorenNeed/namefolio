@@ -3,17 +3,17 @@ import ThreeElement from '../elements/ThreeElement';
 import { AboutMeContent, AboutMeTitle, AboutMeWrapper, HeroContainer, HeroSectionWrapper } from './Hero.styles';
 
 export default class HeroComponent extends React.Component {
-  render() : ReactNode {
+  render(): ReactNode {
     return (
-      <HeroSectionWrapper>
+      <HeroSectionWrapper id='about-me'>
         <HeroContainer>
           <AboutMeWrapper>
             <AboutMeTitle>Roshchupkin Oleksii - Junior Fullstack JS Developer</AboutMeTitle>
             <AboutMeContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed felis eget. Quisque id diam vel quam elementum pulvinar etiam non quam. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. A lacus vestibulum sed arcu non odio euismod lacinia at. Mauris a diam maecenas sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Sed felis eget velit aliquet sagittis id. Faucibus purus in massa tempor nec feugiat. Tellus in hac habitasse platea dictumst.
+              &emsp;  I`m a proficient junior full-stack developer with a strong desire to explore different domains of development and coding. My expertise encompasses various platforms, programming languages, and embedded systems. I have a fervor for technology and its advancements. I am self-motivated and can work both individually and collaboratively as a part of a team. Additionally, I am a quick learner, always willing to expand my knowledge and skills.
             </AboutMeContent>
           </AboutMeWrapper>
-          <ThreeElement/>
+          <ThreeElement />
         </HeroContainer>
 
       </HeroSectionWrapper >

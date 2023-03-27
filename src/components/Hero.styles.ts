@@ -8,7 +8,7 @@ export const HeroSectionWrapper = styled('div')(({theme}) => ({
     justifyContent: 'center',
     width: '100%',
     height: '100vh',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.info.main,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     top: '0',
@@ -26,9 +26,9 @@ export const AboutMeWrapper = styled('div')(({theme}) => ({
     justifyContent: 'center',
     width: '50%',
     padding: '5%',
-    backgroundColor: hexToRGB(theme.palette.warning.light, 0.125),
+    backgroundColor: hexToRGB(theme.palette.info.dark, 0.15),
     borderRadius: '20px',
-    boxShadow: `0 2px 16px ${hexToRGB(theme.palette.info.main, 0.5)}`,
+    boxShadow: `0 0px 16px ${hexToRGB(theme.palette.info.dark, 0.25)}`,
     backdropFilter: 'blur(10px)',
 }));
 
@@ -36,14 +36,14 @@ export const AboutMeTitle = styled('h2')(({theme}) => ({
     fontSize: '2rem',
     fontWeight: 'bold',
     marginBottom: '1rem',
-    color: theme.palette.info.main,
+    color: theme.palette.primary.main,
     fontFamily: 'Bangers',
-    textShadow: `0 2px 4px ${theme.palette.primary.light}`,
+    textShadow: `0 0px 4px ${theme.palette.info.dark}`,
 }));
 
 export const AboutMeContent = styled('p')(({theme}) => ({
     fontSize: '1.2rem',
     fontFamily: 'Oswald',
-    color: theme.palette.primary.light,
-    textShadow: `0 2px 4px ${theme.palette.info.main}`,
+    color: theme.palette.secondary.dark,
+    textShadow: `0 0px 4px ${theme.palette.info.dark}`,
 }));

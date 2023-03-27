@@ -5,5 +5,5 @@ export const PaddingWrapper = styled('div')(({theme}) => ({
     justifyContent: 'center',
     width: '100%',
     height: '100vh',
-    background: `linear-gradient(180deg, ${theme.palette.secondary.main}, ${theme.palette.info.light})`
+    background: `linear-gradient(180deg, ${theme.palette.info.main}, ${theme.palette.info.light})`
 }));

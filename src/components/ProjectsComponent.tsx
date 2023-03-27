@@ -7,7 +7,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 export default class ProjectsComponent extends React.Component {
     render(): React.ReactNode {
         return (
-            <ProjectsContainer>
+            <ProjectsContainer id='projects'>
                 <Container>
                     <ProjectsRow>
                         <AnimationOnScroll animateIn='animate__animated animate__backInLeft animate__faster'>
