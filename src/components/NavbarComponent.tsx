@@ -1,6 +1,6 @@
-import { Container } from '@mui/material';
+import { Link } from '@mui/material';
 import React, { ReactNode } from 'react';
-import { GlassLinkButton, GlassLinkButtons, GlassNavbar, GlassNavbarButton, GlassNavbarMenuIcon, GlassTypography } from './Navbar.styles';
+import { GlassLink, GlassLinkButton, GlassLinkButtons, GlassNavbar, GlassNavbarButton, GlassNavbarMenuIcon, GlassTypography } from './Navbar.styles';
 
 
 export default class NavbarComponent extends React.Component {
@@ -8,16 +8,16 @@ export default class NavbarComponent extends React.Component {
     return (
         <GlassNavbar>
           <GlassTypography variant="h6">
-            Oleksii
+            Roshchupkin Oleksii Portfolio
           </GlassTypography>
           <GlassLinkButtons>
-            <GlassLinkButton>Home</GlassLinkButton>
-            <GlassLinkButton>About</GlassLinkButton>
-            <GlassLinkButton>Contact</GlassLinkButton>
+            <GlassLinkButton><GlassLink href='#about-me'>About</GlassLink></GlassLinkButton>
+            <GlassLinkButton><GlassLink href='#projects'>Projects</GlassLink></GlassLinkButton>
+            <GlassLinkButton><GlassLink href='#contact'>Contact Me</GlassLink></GlassLinkButton>
           </GlassLinkButtons>
-          <GlassNavbarButton edge="end">
+          {/* <GlassNavbarButton edge="end">
             <GlassNavbarMenuIcon />
-          </GlassNavbarButton>
+          </GlassNavbarButton> */}
         </GlassNavbar>
     );
   }

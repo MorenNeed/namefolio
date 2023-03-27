@@ -1,53 +1,49 @@
 import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import { colors } from '../utils/color.pallete';
 import { Container } from '@mui/system';
 import hexToRGB from '../utils/hexToRGB';
 
-export const HeroSectionWrapper = styled('div')({
+export const HeroSectionWrapper = styled('div')(({theme}) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
     height: '100vh',
-    backgroundColor: colors.secondary,
+    backgroundColor: theme.palette.info.main,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     top: '0',
     zIndex: '-1'
-});
+}));
 
 export const HeroContainer = styled(Container)({
     display: 'flex',
     flexDirection: 'row'
 });
 
-export const AboutMeWrapper = styled('div')({
+export const AboutMeWrapper = styled('div')(({theme}) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    width: '100%',
-    maxWidth: '700px',
-    padding: '2rem',
-    backgroundColor: hexToRGB(colors.primary, 0.0125),
+    width: '50%',
+    padding: '5%',
+    backgroundColor: hexToRGB(theme.palette.info.dark, 0.15),
     borderRadius: '20px',
-    boxShadow: `0 2px 16px ${hexToRGB(colors.neutral1, 0.5)}`,
+    boxShadow: `0 0px 16px ${hexToRGB(theme.palette.info.dark, 0.25)}`,
     backdropFilter: 'blur(10px)',
-});
+}));
 
-export const AboutMeTitle = styled('h2')({
+export const AboutMeTitle = styled('h2')(({theme}) => ({
     fontSize: '2rem',
     fontWeight: 'bold',
     marginBottom: '1rem',
-    color: colors.accent,
+    color: theme.palette.primary.main,
     fontFamily: 'Bangers',
-    textShadow: `0 2px 4px ${hexToRGB(colors.complementary, 0.3)}`,
-});
+    textShadow: `0 0px 4px ${theme.palette.info.dark}`,
+}));
 
-export const AboutMeContent = styled('p')({
+export const AboutMeContent = styled('p')(({theme}) => ({
     fontSize: '1.2rem',
     fontFamily: 'Oswald',
-    lineHeight: 1.5,
-    color: hexToRGB(colors.neutral2, 0.5),
-    textShadow: `0 2px 4px ${hexToRGB(colors.neutral3, 0.125)}`,
-});
+    color: theme.palette.secondary.dark,
+    textShadow: `0 0px 4px ${theme.palette.info.dark}`,
+}));
