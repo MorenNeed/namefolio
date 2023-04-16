@@ -2,7 +2,7 @@ import path from "path";
 import { Configuration } from "webpack";
 
 const config: Configuration = {
-  entry: "./src/index.js",
+  entry: "./src/ts/index.js",
   mode: "development",
   module: {
     rules: [

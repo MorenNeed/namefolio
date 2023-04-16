@@ -1,5 +1,5 @@
 import { styled } from "@mui/system";
-import hexToRGB from "../utils/hexToRGB";
+import hexToRGB from "../../utils/hexToRGB";
 
 export const ProjectsContainer = styled('div')(({theme}) => ({
     position: 'absolute',
@@ -26,7 +26,10 @@ export const ProjectsCol = styled('div')(({theme}) => ({
     '-webkit-backdrop-filter': 'blur(100px)', // Safari
     borderRadius: '10px',
     padding: '80px',
-    height: '500px',
+    height: '80%',
+    '@media (max-width : 780px)' : {
+        flexDirection: 'column'
+    },
     transition: 'all 0.4s',
     '&:hover':
     {

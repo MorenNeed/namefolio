@@ -3,7 +3,7 @@ import HeroComponent from '../components/HeroComponent';
 import NavbarComponent from '../components/NavbarComponent';
 import PaddingComponent from '../components/PaddingComponent';
 import ProjectsComponent from '../components/ProjectsComponent';
-import colors from '../utils/color.pallete';
+import colors from '../../utils/color.pallete';
 
 function App() {
 

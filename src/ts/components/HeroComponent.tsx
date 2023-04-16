@@ -13,7 +13,7 @@ export default class HeroComponent extends React.Component {
               &emsp;  I`m a proficient junior full-stack developer with a strong desire to explore different domains of development and coding. My expertise encompasses various platforms, programming languages, and embedded systems. I have a fervor for technology and its advancements. I am self-motivated and can work both individually and collaboratively as a part of a team. Additionally, I am a quick learner, always willing to expand my knowledge and skills.
             </AboutMeContent>
           </AboutMeWrapper>
-          <ThreeElement />
+          <ThreeElement /> {/* THREE.js component */}
         </HeroContainer>
 
       </HeroSectionWrapper >

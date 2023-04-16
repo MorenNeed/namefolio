@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles';
 import { Container } from '@mui/system';
-import hexToRGB from '../utils/hexToRGB';
+import hexToRGB from '../../utils/hexToRGB';
 
 export const HeroSectionWrapper = styled('div')(({theme}) => ({
     display: 'flex',

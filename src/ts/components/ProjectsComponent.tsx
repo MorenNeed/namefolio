@@ -13,7 +13,7 @@ export default class ProjectsComponent extends React.Component {
                         <AnimationOnScroll animateIn='animate__animated animate__backInLeft animate__faster'>
                             <ProjectsCol>
                                 <ProjectTitleContainer>
-                                    <ProjectImgContainer><ProjectImg src={'img/product-list-image-app.jpg'} alt='PRODUCT LIST MANAGE APP'/></ProjectImgContainer>
+                                    <ProjectImgContainer><ProjectImg src={'img/product-list-image-app.png'} alt='PRODUCT LIST MANAGE APP'/></ProjectImgContainer>
                                     <ProjectTitle>Product List Manage App</ProjectTitle>
                                 </ProjectTitleContainer>
                                 <ProjectDescription>
